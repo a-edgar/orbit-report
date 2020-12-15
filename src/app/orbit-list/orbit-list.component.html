@@ -11,7 +11,7 @@
     <tr *ngFor="let satellite of satellites">
         <td>{{satellite.name}}</td>
         <!-- <td [class.warning]="satellite.type.toLowerCase() === 'space debris'">{{satellite.type}}</td> -->
-        <td [class.warning]="satellite.shouldShowWarning() === true">{{satellite.type}}</td>
+        <td id="type" [class.warning]="satellite.shouldShowWarning() === true">{{satellite.type}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
